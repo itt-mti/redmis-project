@@ -7,7 +7,7 @@
 ### Objective
 In this project we will be building a page for registration to the REDMIS association.<br>
 Some of the key points are:
-- It should include a landing page(?)
+- It should include a landing page.
 - It should have a registration page with upload documentation available
 - It should show some available subscription options to the page:
   - Bronce
