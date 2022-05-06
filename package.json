@@ -1,0 +1,23 @@
+{
+  "name": "Redmis-project",
+  "version": "1.0.0",
+  "description": "Static site for Redmis website using Html, css and bootstrap",
+  "main": "docs/landing/index.html",
+  "scripts": {
+    "start": "serve",
+    "build": "echo This is a static template, there is no bundler or bundling involved!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itt-mti/redmis-project.git"
+  },
+  "keywords": [],
+  "author": "Arturo Mendivil",
+  "bugs": {
+    "url": "https://github.com/itt-mti/redmis-project/tree/static/issues"
+  },
+  "homepage": "https://github.com/itt-mti/redmis-project/tree/static#readme",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}

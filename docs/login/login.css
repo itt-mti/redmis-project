@@ -1,0 +1,82 @@
+.myTitle {
+  width: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: static;
+  top: 0px;
+  left: 0px;
+  font-family: sans-serif;
+  font-weight: Regular;
+  font-size: 30px;
+  opacity: 1;
+  text-align: center;
+  padding-top: 100px;
+}
+
+p,
+li {
+  font-size: large;
+  text-align: justify;
+  margin: none;
+}
+
+.myFooter {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #212529;
+  height: 59px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.myButton {
+  background-color: rgb(40, 40, 255); /* Green */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 6px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 15px;
+}
+
+.myMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.myLogin {
+  background-color: rgb(236, 236, 236);
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+
+.myButtonTitle {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+@media (max-width: 950px) {
+  .myMemberships {
+    flex-direction: column;
+  }
+
+  .myFooter {
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
