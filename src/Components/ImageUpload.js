@@ -82,7 +82,7 @@ export default class ImageUpload extends Component {
             <img className="preview" src={previewImage} alt="" />
           </div>
         )}
-          <div className="col-8">
+          <div className="col-8 mt-2">
             <label className="btn btn-default p-0">
               <input type="file" accept="image/*" onChange={this.selectFile} />
             </label>
