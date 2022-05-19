@@ -10,15 +10,23 @@ import Footer from "./UI/Footer";
 
 function App() {
   return (
+    <>
+    <div className="Site">
     <BrowserRouter>
       <NavBar />
+      <div className="Site-Content">
       <Routes>
-        <Route element={<Home />} path="/" />
-        <Route element={<Formulario />} path="/formulario" />
-        <Route element={<Membresia />} path="/membresia" />
+        
+        <Route element={<Home className="full" />} path="/" />
+        <Route element={<Formulario className="full" />} path="/formulario" />
+        <Route element={<Membresia  className="full"/>} path="/membresia" />
+        
       </Routes>
-      <Footer />
+      </div>
     </BrowserRouter>
+    <Footer />
+    </div>
+    </>
   );
 }
 
