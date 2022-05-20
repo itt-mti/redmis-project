@@ -1,6 +1,7 @@
 {
   "name": "redmis-react",
   "version": "0.1.0",
+  "homepage": "https://itt-mti.github.io/redmis-project/",
   "private": true,
   "homepage": "https://itt-mti.github.io/redmis-project/",
   "dependencies": {
@@ -20,24 +21,21 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+<<<<<<< HEAD
     "deploy": "gh-pages -d build", 
+=======
+    "deploy": "gh-pages -d build",
+>>>>>>> 1b0c4c2fedbf1487ab003e58fa0678feed6b6ddd
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
