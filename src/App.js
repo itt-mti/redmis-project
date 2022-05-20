@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,18 +12,21 @@ function App() {
   return (
     <>
     <div className="Site">
-    <BrowserRouter>
+      
+      
       <NavBar />
       <div className="Site-Content">
       <Routes>
         
-        <Route element={<Home className="full" />} path="/" />
-        <Route element={<Formulario className="full" />} path="/formulario" />
-        <Route element={<Membresia  className="full"/>} path="/membresia" />
-        
-      </Routes>
+        <Route exact path="/"><Home /></Route>
+        <Route exact path="/formulario"><Formulario /></Route>
+        <Route exact path="/membresia"><Membresia /></Route>
+      
+       </Routes> 
+      
       </div>
-    </BrowserRouter>
+      
+     
     <Footer />
     </div>
     </>
