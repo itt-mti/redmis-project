@@ -181,7 +181,7 @@ function Formulario() {
   </Form.Group>
 </Form>
     </div>
-    <Footer/>
+    <Footer />
     </>)
 }
 

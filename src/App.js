@@ -12,10 +12,10 @@ function App() {
          
       <NavBar />
       <div className="Site-Content">
-   
+        <h1>Home Page</h1>
       </div>
          
-    <Footer />
+      <Footer />
     </div>
     </>
   );

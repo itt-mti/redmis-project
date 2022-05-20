@@ -2,22 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Formulario from './Components/Formulario';
 import Membresia from './Components/Membresia';
+import NavBar from './UI/NavBar';
+import Footer from './UI/Footer';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
   <HashRouter>
+  
   <Routes>
   <Route path="/" element={<App />} />
   <Route path="/formulario" element={<Formulario />} />
   <Route path="/membresia" element={<Membresia />}/>
   </Routes>
   </HashRouter>
+  
   </React.StrictMode>,
   document.getElementById("root")
  );
