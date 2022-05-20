@@ -7,8 +7,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Formulario from './Components/Formulario';
 import Membresia from './Components/Membresia';
-import NavBar from './UI/NavBar';
-import Footer from './UI/Footer';
+
 
 
 
