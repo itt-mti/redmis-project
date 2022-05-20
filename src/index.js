@@ -14,7 +14,7 @@ root.render(
   <HashRouter>
   <Routes>
   <Route path="/" element={<App />} />
-  <Route path="/membresias" element={<Membresia />} />
+  <Route path="/membresia" element={<Membresia />} />
   <Route path="/formulario" element={<Formulario />} />
   </Routes> 
   </HashRouter>
