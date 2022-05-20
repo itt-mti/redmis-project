@@ -10,7 +10,7 @@ export default function NavBar() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-                <Nav.Link href="/redmis-project">Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/membresia">Membresia</Nav.Link>
                 <Nav.Link href="/formulario">Solicitud</Nav.Link>
             </Nav>
