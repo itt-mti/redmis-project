@@ -1,27 +1,37 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import App from './App';
 
-import Formulario from "./Components/Formulario";
-import Membresia from "./Components/Membresia";
-import reportWebVitals from './reportWebVitals';
+import Formulario from './Components/Formulario';
+import Membresia from './Components/Membresia';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+
+
+ReactDOM.render(
   <React.StrictMode>
   <HashRouter>
+  
   <Routes>
   <Route path="/" element={<App />} />
-  <Route path="/membresia" element={<Membresia />} />
   <Route path="/formulario" element={<Formulario />} />
-  </Routes> 
+  <Route path="/membresia" element={<Membresia />}/>
+  </Routes>
   </HashRouter>
-  </React.StrictMode>
-);
+  
+  </React.StrictMode>,
+  document.getElementById("root")
+ );
+
+
+
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
