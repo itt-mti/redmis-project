@@ -2,6 +2,8 @@ import { Button, Row, Col, FloatingLabel } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 
 import ImageUpload from "./ImageUpload";
+import NavBar from "../UI/NavBar";
+import Footer from "../UI/Footer";
 
 
 
@@ -9,7 +11,10 @@ import ImageUpload from "./ImageUpload";
 
 
 function Formulario() {
-    return <div className="container">
+    return (
+      <>
+    <NavBar />
+    <div className="container">
       
 <Form>
 <Row className="justify-content-center">
@@ -176,6 +181,8 @@ function Formulario() {
   </Form.Group>
 </Form>
     </div>
+    <Footer/>
+    </>)
 }
 
 export default Formulario;
