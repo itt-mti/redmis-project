@@ -12,20 +12,20 @@ function App() {
   return (
     <>
     <div className="Site">
-    <BrowserRouter basename="/redmis-project">
+    {/*<BrowserRouter basename="/redmis-project">*/}
 
       <NavBar />
       <div className="Site-Content">
-      <Routes>
+        {/* <Routes>
         
         <Route element={<Home className="full" />} path="/" />
         <Route element={<Formulario className="full" />} path="/formulario" />
         <Route element={<Membresia  className="full"/>} path="/membresia" />
         
-      </Routes>
+      </Routes>*/}
       </div>
 
-</BrowserRouter>
+{/*</BrowserRouter>*/}
     <Footer />
     </div>
     </>
