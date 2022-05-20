@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -13,7 +13,7 @@ function App() {
     <>
     <div className="Site">
     {/* <BrowserRouter basename="/redmis-project"> */}
-<HashRouter>
+
       <NavBar />
       <div className="Site-Content">
       <Routes>
@@ -24,7 +24,7 @@ function App() {
         
       </Routes>
       </div>
-</HashRouter>
+
 {/*</BrowserRouter>*/}
     <Footer />
     </div>
