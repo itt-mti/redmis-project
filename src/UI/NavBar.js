@@ -13,7 +13,7 @@ export default function NavBar() {
             <Nav className="ms-auto">
                 
                 <Nav.Link href="/membresia">Membresia</Nav.Link>
-                <Nav.Link href="/formulario"><Link to="/formulario">Solicitud</Link></Nav.Link>
+                <Nav.Link href="/formulario">Solicitud</Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Container>     
