@@ -7,7 +7,7 @@ export default function NavBar() {
         <>
         <Navbar expand="lg" bg="dark" variant="dark" >
         <Container >  
-            <Navbar.Brand href="/">REDMIS</Navbar.Brand>
+            <Navbar.Brand href="/redmis-project">REDMIS</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
