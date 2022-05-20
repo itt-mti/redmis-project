@@ -12,7 +12,7 @@ export default function NavBar() {
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
                 
-                <Nav.Link><Link to="/membresia">Membresia</Link></Nav.Link>
+                <Nav.Link href="/membresia">Membresia</Nav.Link>
                 <Nav.Link href="/formulario"><Link to="/formulario">Solicitud</Link></Nav.Link>
             </Nav>
             </Navbar.Collapse>
