@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import Home from "./Components/Home";
+
 import Formulario from "./Components/Formulario";
 import Membresia from "./Components/Membresia";
 import reportWebVitals from './reportWebVitals';
@@ -12,7 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <HashRouter>
-    <App />
+  <Routes>
+  <Route path="/" element={<App />} />
+  <Route path="/membresias" element={<Membresia />} />
+  <Route path="/formulario" element={<Formulario />} />
+  </Routes> 
   </HashRouter>
   </React.StrictMode>
 );
