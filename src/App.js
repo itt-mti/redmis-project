@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <div className="Site">
-    <BrowserRouter>
+    <BrowserRouter basename="/redmis-project">
       <NavBar />
       <div className="Site-Content">
       <Routes>
