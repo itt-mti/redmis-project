@@ -12,7 +12,8 @@ function App() {
   return (
     <>
     <div className="Site">
-    <BrowserRouter basename="/redmis-project">
+    {/* <BrowserRouter basename="/redmis-project"> */}
+<HashRouter>
       <NavBar />
       <div className="Site-Content">
       <Routes>
@@ -23,7 +24,8 @@ function App() {
         
       </Routes>
       </div>
-    </BrowserRouter>
+</HashRouter>
+{/*</BrowserRouter>*/}
     <Footer />
     </div>
     </>
