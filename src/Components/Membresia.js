@@ -4,7 +4,19 @@ import NavBar from "../UI/NavBar";
 
 
 function Membresia() {
-    return <> <NavBar /><div><h1>Membresia page</h1></div></>
+   return (
+        <>
+        <div className="Site">
+             
+          <NavBar />
+          <div className="Site-Content">
+            <h1>Membresia</h1>
+          </div>
+             
+          <Footer />
+        </div>
+        </>
+      );
 }
 
 export default Membresia;
