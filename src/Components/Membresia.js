@@ -1,5 +1,5 @@
-import { Container } from "react-bootstrap";
 import NavBar from "../UI/NavBar";
+import Footer from "../UI/Footer";
 
 
 
