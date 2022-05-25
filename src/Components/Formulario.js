@@ -14,7 +14,6 @@ import {
 
 function Formulario() {
   const [loading, setLoading] = useState(false);
-
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [direccion, setDireccion] = useState("");
