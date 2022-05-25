@@ -10,7 +10,7 @@ import {
   supabaseInsertEntidadAsync,
   supabaseUploadFileAsync,
 } from "../services/supabaseClient";
-import { eventWrapper } from "@testing-library/user-event/dist/utils";
+
 
 function Formulario() {
   const [loading, setLoading] = useState(false);
