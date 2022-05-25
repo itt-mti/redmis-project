@@ -10,6 +10,7 @@ import {
   supabaseInsertEntidadAsync,
   supabaseUploadFileAsync,
 } from "../services/supabaseClient";
+import { eventWrapper } from "@testing-library/user-event/dist/utils";
 
 function Formulario() {
   const [loading, setLoading] = useState(false);
@@ -21,6 +22,8 @@ function Formulario() {
   const [grado, setGrado] = useState("");
   const [email, setEmail] = useState("");
   const [disciplina, setDisciplina] = useState("");
+  const [showDiscilplina, setShowDisciplina] = useState("");
+  const [disciplinaOtra, setDisciplinaOtra] = useState("");
   const [subDisciplina, setSubDisciplina] = useState("");
   const [especialidad, setEspecialidad] = useState("");
   const [institucion, setInstitucion] = useState("");
@@ -34,6 +37,7 @@ function Formulario() {
   const [cartaFile, setCartaFile] = useState("");
   const [foto, setFoto] = useState("");
   const [fotoFile, setFotoFile] = useState("");
+
 
   const handleUpload = async (e, formValues) => {
     e.preventDefault();
@@ -63,6 +67,8 @@ function Formulario() {
     setFoto(fileName);
   };
 
+
+
   const cvuChange = (e) => {
     const file = e.target.files[0];
 
@@ -85,7 +91,13 @@ function Formulario() {
     setCarta(filePath);
   };
 
+
+
+  
   const handleSubmit = (event) => {
+   
+    
+    
     const formValues = {
       nombre: nombre,
       apellido: apellido,
@@ -94,6 +106,7 @@ function Formulario() {
       email: email,
       grado: grado,
       disciplina: disciplina,
+      disciplinaOtra: disciplinaOtra,
       sub_disciplina: subDisciplina,
       especialidad: especialidad,
       institucion: institucion,
@@ -107,13 +120,15 @@ function Formulario() {
     };
 
     handleUpload(event, formValues);
+
+   
   };
 
   return (
     <>
       <NavBar />
       <div className="container">
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit}> 
           <Row className="justify-content-center">
             <Form.Group
               as={Col}
@@ -173,7 +188,7 @@ function Formulario() {
                 onChange={(e) => setTelefono(e.target.value)}
               >
                 <Form.Control
-                  type="text"
+                  type="tel"
                   placeholder="Telefono"
                   className="mt-2 mt-md-0"
                   required
@@ -204,6 +219,7 @@ function Formulario() {
                   aria-label="GradoAcademico"
                   value={grado}
                   onChange={(e) => setGrado(e.target.value)}
+                  required
                 >
                   <option></option>
                   <option value="Licenciatura">Licenciatura</option>
@@ -221,7 +237,12 @@ function Formulario() {
                 <Form.Select
                   aria-label="Disciplina"
                   value={disciplina}
-                  onChange={(e) => setDisciplina(e.target.value)}
+                  onChange={(e) => {
+                    setDisciplina(e.target.value);
+                    if (e.target.value === "Otra") setShowDisciplina(true);
+                    else setShowDisciplina(false);
+                  }}
+                  required
                 >
                   <option></option>
                   <option value="Tecnología de la Informatica">
@@ -234,11 +255,33 @@ function Formulario() {
                     Ingeniería de Software
                   </option>
                   <option value="Otra">
-                    Otra Especialidad en Materia de Tecnología
+                    Otra
                   </option>
                 </Form.Select>
               </FloatingLabel>
             </Col>
+            {
+              showDiscilplina ? (
+                <Col md>
+                  <FloatingLabel
+                    controlId="inputDisciplinaOtra"
+                    label="En caso de otra disciplina, favor de especificar"
+                  >
+                    <Form.Control
+                      type="text"
+                      placeholder=""
+                      className="mt-2 mt-md-0"
+                      value={disciplinaOtra}
+                      onChange={(e) => setDisciplinaOtra(e.target.value)}
+                      required
+                    />
+                  </FloatingLabel>
+                </Col>
+              ) : (
+                ""
+              )
+            }
+
             <Col md>
               <FloatingLabel
                 controlId="inputSubdisciplina"
@@ -308,6 +351,7 @@ function Formulario() {
                   placeholder="Direccion de la Dependencia"
                   value={direccionDependencia}
                   onChange={(e) => setDireccionDependencia(e.target.value)}
+                  required
                 />
               </FloatingLabel>
             </Col>
@@ -321,6 +365,7 @@ function Formulario() {
                   placeholder="Ocupación"
                   value={ocupacion}
                   onChange={(e) => setOcupacion(e.target.value)}
+                  required
                 />
               </FloatingLabel>
             </Col>
@@ -331,6 +376,7 @@ function Formulario() {
                   aria-label="entidad"
                   value={entidad}
                   onChange={(e) => setEntidad(e.target.value)}
+                  required
                 >
                   <option></option>
                   <option value="Ags">Aguascalientes</option>
@@ -375,7 +421,7 @@ function Formulario() {
               CVU
             </Form.Label>
             <Col sm={10}>
-              <Form.Control type="file" onChange={(e) => cvuChange(e)} />
+              <Form.Control type="file" onChange={(e) => cvuChange(e)} required />
             </Col>
           </Form.Group>
 
@@ -388,7 +434,7 @@ function Formulario() {
               Carta Motivo
             </Form.Label>
             <Col sm={10}>
-              <Form.Control type="file" onChange={(e) => cartaChange(e)} />
+              <Form.Control type="file" onChange={(e) => cartaChange(e)} required/>
             </Col>
           </Form.Group>
 

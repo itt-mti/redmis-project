@@ -4,7 +4,7 @@ import Footer from "../UI/Footer";
 
 
 function Membresia() {
-   return (
+    return (
         <>
         <div className="Site">
              
