@@ -136,6 +136,7 @@ function Formulario() {
               md="12"
               className="mb-3 mt-5"
               controlId="formImage"
+              required
             >
               <Form.Label>Fotografia</Form.Label>
               <ImageUpload selectFile={selectImage} />
@@ -188,7 +189,7 @@ function Formulario() {
                 onChange={(e) => setTelefono(e.target.value)}
               >
                 <Form.Control
-                  type="tel"
+                  type="number"
                   placeholder="Telefono"
                   className="mt-2 mt-md-0"
                   required
