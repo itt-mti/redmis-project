@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/redmis-project/static/css/main.0b3fd15e.css",
-    "main.js": "/redmis-project/static/js/main.930dff6c.js",
+    "main.js": "/redmis-project/static/js/main.0576c183.js",
     "index.html": "/redmis-project/index.html",
     "main.0b3fd15e.css.map": "/redmis-project/static/css/main.0b3fd15e.css.map",
-    "main.930dff6c.js.map": "/redmis-project/static/js/main.930dff6c.js.map"
+    "main.0576c183.js.map": "/redmis-project/static/js/main.0576c183.js.map"
   },
   "entrypoints": [
     "static/css/main.0b3fd15e.css",
-    "static/js/main.930dff6c.js"
+    "static/js/main.0576c183.js"
   ]
 }
