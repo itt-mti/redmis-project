@@ -5,6 +5,7 @@ const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   headers: { "Access-Control-Allow-Origin": "*" },
+  mode: 'cors',
 });
 
 export const supabaseInsertEntidadAsync = async (values) => {
