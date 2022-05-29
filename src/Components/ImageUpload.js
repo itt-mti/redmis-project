@@ -54,7 +54,7 @@ export default class ImageUpload extends Component {
           )}
           <div className="col-8 mt-2">
             <label className="btn btn-default p-0">
-              <input type="file" accept="image/*" onChange={this.selectFile} />
+              <input type="file" accept="image/*" onChange={this.selectFile} required />
             </label>
           </div>
         </div>
