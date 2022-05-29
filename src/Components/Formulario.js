@@ -136,7 +136,7 @@ function Formulario() {
               md="12"
               className="mb-3 mt-5"
               controlId="formImage"
-              required
+              
             >
               <Form.Label>Fotografia</Form.Label>
               <ImageUpload selectFile={selectImage} />
@@ -422,7 +422,7 @@ function Formulario() {
               CVU
             </Form.Label>
             <Col sm={10}>
-              <Form.Control type="file" onChange={(e) => cvuChange(e)} required />
+              <Form.Control type="file" accept=".pdf" onChange={(e) => cvuChange(e)} required />
             </Col>
           </Form.Group>
 
@@ -435,7 +435,7 @@ function Formulario() {
               Carta Motivo
             </Form.Label>
             <Col sm={10}>
-              <Form.Control type="file" onChange={(e) => cartaChange(e)} required/>
+              <Form.Control type="file" accept=".pdf" onChange={(e) => cartaChange(e)} required/>
             </Col>
           </Form.Group>
 
