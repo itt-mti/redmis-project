@@ -431,7 +431,7 @@ function Formulario() {
             controlId="inputCartaMotivo"
           >
             <Form.Label column sm={2}>
-              Carta Motivo* <small style={{color: 'red'}}>(solo formato PDF)</small>
+              Carta Motivo** <small style={{color: 'red'}}>(solo formato PDF)</small>
             </Form.Label>
             <Col sm={10}>
               <Form.Control type="file" accept=".pdf" onChange={(e) => cartaChange(e)} required/>
