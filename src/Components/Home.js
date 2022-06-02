@@ -1,10 +1,16 @@
-
+import NavBar from "../UI/NavBar";
+import Footer from "../UI/Footer";
 
 
 function Home() {
-    return <div><h1>Home page</h1>
-    
+    return <>
+    <NavBar />
+    <div className="Site-Content">
+      <h1>Home Page</h1>
     </div>
+       
+    <Footer />
+    </>
 }
 
 export default Home;
