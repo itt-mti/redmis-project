@@ -1,7 +1,7 @@
 {
   "name": "redmis-react",
   "version": "0.1.0",
-  "homepage": "https://itt-mti.github.io/redmis-project/",
+  "homepage": "https://dmherrera.github.io/redmis-project/",
   "private": true,
   "dependencies": {
     "@supabase/supabase-js": "^1.35.3",
