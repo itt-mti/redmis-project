@@ -137,17 +137,17 @@ function Formulario() {
               controlId="formImage"
               
             >
-              <Form.Label>Fotografia</Form.Label>
+              <Form.Label>Fotografia*</Form.Label>
               <ImageUpload selectFile={selectImage} />
             </Form.Group>
           </Row>
 
           <Row className="g-2 mt-3">
             <Col md>
-              <FloatingLabel controlId="inputNombre" label="Nombre(s)">
+              <FloatingLabel controlId="inputNombre" label="Nombre(s)*">
                 <Form.Control
                   type="text"
-                  placeholder="Nombre(s)"
+                  placeholder="Nombre(s)*"
                   value={nombre}
                   onChange={(e) => setNombre(e.target.value)}
                   required
@@ -155,10 +155,10 @@ function Formulario() {
               </FloatingLabel>
             </Col>
             <Col md>
-              <FloatingLabel controlId="inputApellido" label="Apellido(s)">
+              <FloatingLabel controlId="inputApellido" label="Apellido(s)*">
                 <Form.Control
                   type="text"
-                  placeholder="Apellido(s)"
+                  placeholder="Apellido(s)*"
                   className="mt-2 mt-md-0"
                   value={apellido}
                   onChange={(e) => setApellido(e.target.value)}
@@ -170,10 +170,10 @@ function Formulario() {
 
           <Row className="g-2 mt-md-3 mt-2 ">
             <Col md>
-              <FloatingLabel controlId="inputDireccion" label="Dirección">
+              <FloatingLabel controlId="inputDireccion" label="Dirección*">
                 <Form.Control
                   type="text"
-                  placeholder="Dirección"
+                  placeholder="Dirección*"
                   value={direccion}
                   onChange={(e) => setDireccion(e.target.value)}
                   required
@@ -183,13 +183,13 @@ function Formulario() {
             <Col md>
               <FloatingLabel
                 controlId="inputTelefono"
-                label="Telefono"
+                label="Telefono*"
                 value={telefono}
                 onChange={(e) => setTelefono(e.target.value)}
               >
                 <Form.Control
                   type="number"
-                  placeholder="Telefono"
+                  placeholder="Telefono*"
                   className="mt-2 mt-md-0"
                   required
                 />
@@ -199,10 +199,10 @@ function Formulario() {
 
           <Row className="g-2 mt-md-3 mt-2">
             <Col md>
-              <FloatingLabel controlId="inputEmail" label="E-mail">
+              <FloatingLabel controlId="inputEmail" label="E-mail*">
                 <Form.Control
                   type="email"
-                  placeholder="E-mail"
+                  placeholder="E-mail*"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -212,11 +212,11 @@ function Formulario() {
             <Col md>
               <FloatingLabel
                 controlId="inputGradoAcademico"
-                label="Grado Academico"
+                label="Grado Academico*"
               >
                 <Form.Select
                   className="mt-2 mt-md-0"
-                  aria-label="GradoAcademico"
+                  aria-label="GradoAcademico*"
                   value={grado}
                   onChange={(e) => setGrado(e.target.value)}
                   required
@@ -233,7 +233,7 @@ function Formulario() {
 
           <Row className="g-2 mt-md-3 mt-2">
             <Col md>
-              <FloatingLabel controlId="inputDisciplina" label="Disciplina">
+              <FloatingLabel controlId="inputDisciplina" label="Disciplina*">
                 <Form.Select
                   aria-label="Disciplina"
                   value={disciplina}
@@ -265,7 +265,7 @@ function Formulario() {
                 <Col md>
                   <FloatingLabel
                     controlId="inputDisciplinaOtra"
-                    label="En caso de otra disciplina, favor de especificar"
+                    label="En caso de otra disciplina, favor de especificar*"
                   >
                     <Form.Control
                       type="text"
@@ -285,11 +285,11 @@ function Formulario() {
             <Col md>
               <FloatingLabel
                 controlId="inputSubdisciplina"
-                label="Sub-disciplina"
+                label="Sub-disciplina*"
               >
                 <Form.Control
                   type="text"
-                  placeholder="Sub-disciplina"
+                  placeholder="Sub-disciplina*"
                   className="mt-2 mt-md-0"
                   value={subDisciplina}
                   onChange={(e) => setSubDisciplina(e.target.value)}
@@ -301,10 +301,10 @@ function Formulario() {
 
           <Row className="g-2 mt-md-3 mt-2">
             <Col md>
-              <FloatingLabel controlId="inputEspecialidad" label="Especialidad">
+              <FloatingLabel controlId="inputEspecialidad" label="Especialidad*">
                 <Form.Control
                   type="text"
-                  placeholder="Especialidad"
+                  placeholder="Especialidad*"
                   value={especialidad}
                   onChange={(e) => setEspecialidad(e.target.value)}
                   required
@@ -314,11 +314,11 @@ function Formulario() {
             <Col md>
               <FloatingLabel
                 controlId="inputInstitucion"
-                label="Institucion Academica"
+                label="Institucion Academica*"
               >
                 <Form.Control
                   type="text"
-                  placeholder="Institucion Academica"
+                  placeholder="Institucion Academica*"
                   className="mt-2 mt-md-0"
                   value={institucion}
                   onChange={(e) => setInstitucion(e.target.value)}
@@ -330,10 +330,10 @@ function Formulario() {
 
           <Row className="g-2 mt-md-3 mt-2">
             <Col md>
-              <FloatingLabel controlId="inputDependencia" label="Dependencia">
+              <FloatingLabel controlId="inputDependencia" label="Dependencia*">
                 <Form.Control
                   type="text"
-                  placeholder="Dependencia"
+                  placeholder="Dependencia*"
                   value={dependencia}
                   onChange={(e) => setDependencia(e.target.value)}
                   required
@@ -343,12 +343,12 @@ function Formulario() {
             <Col md>
               <FloatingLabel
                 controlId="inputDireccionDependencia"
-                label="Direccion de la Dependencia"
+                label="Direccion de la Dependencia*"
               >
                 <Form.Control
                   type="text"
                   className="mt-2 mt-md-0"
-                  placeholder="Direccion de la Dependencia"
+                  placeholder="Direccion de la Dependencia*"
                   value={direccionDependencia}
                   onChange={(e) => setDireccionDependencia(e.target.value)}
                   required
@@ -359,10 +359,10 @@ function Formulario() {
 
           <Row className="g-2 mt-md-3 mt-2">
             <Col md>
-              <FloatingLabel controlId="inputOcupacion" label="Ocupación">
+              <FloatingLabel controlId="inputOcupacion" label="Ocupación*">
                 <Form.Control
                   type="text"
-                  placeholder="Ocupación"
+                  placeholder="Ocupación*"
                   value={ocupacion}
                   onChange={(e) => setOcupacion(e.target.value)}
                   required
@@ -370,7 +370,7 @@ function Formulario() {
               </FloatingLabel>
             </Col>
             <Col md>
-              <FloatingLabel controlId="inputEntidad" label="Entidad">
+              <FloatingLabel controlId="inputEntidad" label="Entidad*">
                 <Form.Select
                   className="mt-2 mt-md-0"
                   aria-label="entidad"
@@ -418,7 +418,7 @@ function Formulario() {
 
           <Form.Group as={Row} className="mb-3 mt-4" controlId="inputCVU">
             <Form.Label column sm={2}>
-              CVU
+              CVU* <small style={{color: 'red'}}>(solo formato PDF)</small>
             </Form.Label>
             <Col sm={10}>
               <Form.Control type="file" accept=".pdf" onChange={(e) => cvuChange(e)} required />
@@ -431,12 +431,14 @@ function Formulario() {
             controlId="inputCartaMotivo"
           >
             <Form.Label column sm={2}>
-              Carta Motivo
+              Carta Motivo* <small style={{color: 'red'}}>(solo formato PDF)</small>
             </Form.Label>
             <Col sm={10}>
               <Form.Control type="file" accept=".pdf" onChange={(e) => cartaChange(e)} required/>
             </Col>
           </Form.Group>
+
+          <small>*Campo requerido</small>
 
           <Form.Group as={Row} className="mb-5 mt-4">
             <Col sm={{ span: 10 }}>
